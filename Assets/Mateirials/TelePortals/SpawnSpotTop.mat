@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6751431743832928270
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SpawnSpotTop
+  m_Shader: {fileID: -6465566751694194690, guid: de27365fbcbfd9648bdb6c9b3f528973,
+    type: 3}
+  m_ValidKeywords:
+  - _EDGEORWAVEPATTERN
+  - _NORMALS
+  - _OPACITYMASK
+  - _VERTEXANIMATION
+  m_InvalidKeywords:
+  - _OPACITYALPHA
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaChangeValue: 0.78
+    - _AlphaClipingValue: 0.1
+    - _AlphaFadeRangeMax: 0.65
+    - _AlphaFadeRangeMin: 0
+    - _AlphaMax: 1
+    - _AlphaMin: 0.71
+    - _AlphaSmoothMax: 1
+    - _AlphaSmoothMin: 0
+    - _DirectionFromObjectSmoothMax: 1
+    - _DirectionFromObjectSmoothMin: 0
+    - _DirectionScalar: 0.32
+    - _DistanceFromObjectSmoothMax: 0.07
+    - _DistanceFromObjectSmoothMin: 0.52
+    - _DistancePBR: 0
+    - _DistancePBRSmoothMax: 0.09
+    - _DistancePBRSmoothMin: 0.65
+    - _DistanceSmoothMax: 0.18
+    - _DistanceSmoothMin: 0.26
+    - _EDGEORWAVEPATTERN: 1
+    - _EdgeSmooth: 0.77
+    - _EdgeSmoothWidth: 0.83
+    - _EdgeSmoothWidth_1: 0
+    - _EmmisionSmoothMax: 0.36
+    - _EmmisionSmoothMin: 0.01
+    - _EmmisionStrength: 50
+    - _EmmisionStrength_1: 0
+    - _EmmisionWave: 0
+    - _EmmisionWavePosition: 0.25
+    - _EmmisionWaveSmoothMax: 0
+    - _EmmisionWaveSmoothMin: 0.19
+    - _EmmisionWaveStrength: 20
+    - _MetalicMax: 1
+    - _MetalicMin: 1
+    - _MetalicSmoothMax: 0.82
+    - _MetalicSmoothMin: 0.43
+    - _NORMALS: 1
+    - _NoiseDensity_1: 100
+    - _NoiseScale: 50
+    - _NoiseSmoothMax_2: 1
+    - _NoiseSmoothMin_2: 0
+    - _NormalScalar: 0.5
+    - _NormalStrength: 1.42
+    - _NormalStrengthFromHight: 0.1
+    - _OPACITYALPHA: 1
+    - _OPACITYMASK: 1
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _SmoothMaxNoise: 0.61
+    - _SmoothMinNoise: 0
+    - _SmoothnessMax: 1
+    - _SmoothnessMin: 0.66
+    - _SmoothnessSmoothMax: 1
+    - _SmoothnessSmoothMin: 0
+    - _VERTEXANIMATION: 1
+    - _VertexIndex: 1
+    - _VoronoiCellAngular: 0
+    - _VoronoiDensity: 0
+    - _VoronoiSmoothMax_1: 0
+    - _VoronoiSmoothMin_1: 0
+    - _WaveDensity: 0
+    - _WaveSmoothMax: 0
+    - _WaveSmoothMin: 0
+    - _WaveingStrength: 0.3
+    - _ZpostionZero: 0.02
+    m_Colors:
+    - _ColorBody: {r: 0.089516714, g: 0.06132078, b: 1, a: 0}
+    - _ColorFirst: {r: 0.8584906, g: 0.08503916, b: 0.08503916, a: 0}
+    - _ColorLandSpot: {r: 0.9433962, g: 0.10234961, b: 0.10234961, a: 0}
+    - _ColorSecond: {r: 1, g: 0.6489396, b: 0, a: 0}
+    - _ColorThird: {r: 0, g: 0, b: 0, a: 0}
+    - _DistanceRangeMinMAx: {r: 0, g: 0.1, b: 0, a: 0}
+    - _HandPostion: {r: 0.3923945, g: 0.76288843, b: 0.50762546, a: 0}
+    - _LandPlaceDotProduct: {r: 0, g: 0, b: 1.48, a: 0}
+    - _MetalicMax: {r: 0, g: 0, b: 0, a: 0}
+    - _MetalicMin: {r: 0, g: 0, b: 0, a: 0}
+    - _PosA: {r: 0, g: 0.1, b: -0.02, a: 0}
+    - _PosB: {r: 0, g: -0.1, b: -0.02, a: 0}
+    - _SmoothnessMax: {r: 0, g: 0, b: 0, a: 0}
+    - _SmoothnessMin: {r: 0, g: 0, b: 0, a: 0}
+    - _UVNoiseMovment: {r: 0.03, g: 0, b: 0, a: 0}
+    - _Vector2: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

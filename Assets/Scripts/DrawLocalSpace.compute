@@ -1,0 +1,65 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel Draw
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> DrawTexture;
+//float3 piantObjectPosition;
+RWStructuredBuffer<float3> piantObjectPosition;
+//float brushSize[];
+float brushSizeTreshhold;
+
+float invLerp(float from, float to, float value) {
+    return (value - from) / (to - from);
+}
+
+
+[numthreads(8,8,1)]
+void Draw(uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+    float2 res = float2(512, 512);
+    float2 uv = (2 * id - res) / 512;
+    float4 col;
+     
+    
+    // Loop on CPU
+   /* float paintDistance = distance(uv.xy, piantObjectPosition.xy);
+    if (paintDistance < 0.1) 
+    {
+        col = float4(1, 1, 1, 1);
+    }
+    else 
+    {
+        col = float4(0, 0, 0, 1);
+    }*/
+    //col = float4(uv.x, uv.y, 1, 1);
+
+
+    // Loop on GPU
+    for (int i = 0; i < piantObjectPosition.Length;i++)
+    {
+        float paintDistance = distance(uv.xy, piantObjectPosition[i].xy);
+        float distanceFromCenter = distance(float2(0.f,0.f), piantObjectPosition[i].xy);
+        float brushMulitplier = invLerp(0.8f, 0.01f, distanceFromCenter) * brushSizeTreshhold;
+        
+        
+        if (paintDistance <  brushMulitplier)
+        {
+            //float fadeEdges = invLerp(0.1f, 0.2f, paintDistance* 0.01);
+            float fadeEdges = smoothstep(0.7f, -5.f, paintDistance );
+            
+            col += float4(fadeEdges, fadeEdges, fadeEdges, fadeEdges);
+            //col += float4(1, 1, 1, 1);
+            
+        }
+        else
+        {
+            col += float4(0, 0, 0, 0);
+        }
+    }
+
+    
+    
+    DrawTexture[id.xy] += col ;
+}

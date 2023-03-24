@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Cloud_mat
+  m_Shader: {fileID: -6465566751694194690, guid: e2e1278a6c260fe4aba5bee72e5176b5,
+    type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ColorOne_SmoothStepMax: 1.15
+    - _ColorOne_SmoothStepMin: 0.48
+    - _DIFFRENTNOISE: 0
+    - _Float: 0
+    - _NoiseOneScale: 98.9
+    - _NoiseTwoScale: 9.01
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _SmoothStepMax: 0.91
+    - _SmoothStepMin: -0.51
+    m_Colors:
+    - _ColoTwo: {r: 0.59599996, g: 0.59599996, b: 0.59599996, a: 0}
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - _ColorThree: {r: 0.879, g: 0.879, b: 0.879, a: 0}
+    - _UVTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _UVoffest: {r: 0, g: 0.37, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &6974021249085466618
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5

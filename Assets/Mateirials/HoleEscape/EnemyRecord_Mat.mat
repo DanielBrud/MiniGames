@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: EnemyRecord_Mat
+  m_Shader: {fileID: -6465566751694194690, guid: 2d29c4e580448814c8b743f3ab683fc6,
+    type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _SampleTexture2D_c9c3003307eb46039959cf1401a36020_Texture_1:
+        m_Texture: {fileID: 2800000, guid: f42005e7d69c6ca438f3461c58ed46e2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Charge: 0.726
+    - _EmmisionStrenght: 25
+    - _Engine: 0.88
+    - _EngineColorlBlendStrength: 3
+    - _EngineColorlMinStrength: 2
+    - _EngineNoiseScale: 50
+    - _EngineOffset: -0.15
+    - _EngineRotate: 200
+    - _Laser: 0.95
+    - _LaserAnimationValue: 0
+    - _LaserOffsetAnimation: 5
+    - _LaserOffsetSmoothness: 0.6
+    - _LaserOffsetSmoothnessMin: 0.02
+    - _LaserWaveMultiplier: 23.83
+    - _LineCount: 124.37
+    - _MetalicMax: 0.75
+    - _MetalicMin: 0.1
+    - _NoiseScale: 50
+    - _NoiseSmoothTresholdMax: 0.17
+    - _NoiseSmoothTresholdMin: -0.19
+    - _NormalMax: 0
+    - _NormalMin: -0.09
+    - _NormalStrenght: 2
+    - _NormalStrengthMax: 0
+    - _NormalStrengthMin: -0.01
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _SharpEdge: 0.07
+    - _SharpStrenght: 1
+    - _SmoothEngineMax: 0.87
+    - _SmoothEngineMin: 0.85
+    - _SmoothLaserMax: 0.96
+    - _SmoothLaserMin: 0.94
+    - _SmoothMaX: 0.12
+    - _SmoothMin: 0.08
+    - _SmoothnessMax: 0.56
+    - _SmoothnessMin: 0.28
+    - _TwirldStrenght: 24.8
+    - _rotest: -0.02
+    - _rotest2: 0
+    - _rotest_1: -3.14
+    m_Colors:
+    - _ChargeColor: {r: 0.015686274, g: 0.5746378, b: 1, a: 0}
+    - _Color: {r: 0.8490566, g: 0.056381337, b: 0, a: 0}
+    - _LaserCenter: {r: -0.63, g: -0.47, b: 0, a: 0}
+    - _LaserWaveMultiplier: {r: 0, g: 0, b: 0, a: 0}
+    - _NoiseTiling: {r: 2, g: 2, b: 0, a: 0}
+    - _TwirldCenter: {r: 0.25, g: 0.5, b: 0, a: 0}
+    - _TwirldOffset: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
+--- !u!114 &4271869172642412530
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5

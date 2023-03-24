@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2428765249556232315
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: LandSpot_Mat
+  m_Shader: {fileID: -6465566751694194690, guid: 947d92d1be9a4924186e3412a9e9a92c,
+    type: 3}
+  m_ValidKeywords:
+  - _NORMALS
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: 3000
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AlphaChangeValue: 0
+    - _AlphaClipingValue: 0
+    - _AlphaFadeRangeMax: 0
+    - _AlphaFadeRangeMin: 0
+    - _AlphaMax: 1
+    - _AlphaMin: 1
+    - _AlphaSmoothMax: 1
+    - _AlphaSmoothMin: 0
+    - _DirectionFromObjectSmoothMax: 1
+    - _DirectionFromObjectSmoothMin: 0
+    - _DirectionScalar: 0
+    - _DistanceFromObjectSmoothMax: 0
+    - _DistanceFromObjectSmoothMin: 1
+    - _DistancePBR: 0
+    - _DistancePBRSmoothMax: 0.09
+    - _DistancePBRSmoothMin: 0.65
+    - _DistanceSmoothMax: 1
+    - _DistanceSmoothMin: 0
+    - _EDGEORWAVEPATTERN: 0
+    - _EdgeSmooth: 0
+    - _EdgeSmoothWidth: 0
+    - _EdgeSmoothWidth_1: 0
+    - _EmmisionSmoothMax: 1
+    - _EmmisionSmoothMin: 0
+    - _EmmisionStrength: 1
+    - _EmmisionStrength_1: 0
+    - _EmmisionWave: 0
+    - _EmmisionWavePosition: 0
+    - _EmmisionWaveSmoothMax: 0
+    - _EmmisionWaveSmoothMin: 0.2
+    - _EmmisionWaveStrength: 0
+    - _MetalicMax: 1
+    - _MetalicMin: 1
+    - _MetalicSmoothMax: 1
+    - _MetalicSmoothMin: 1
+    - _NORMALS: 1
+    - _NoiseDensity_1: 0
+    - _NoiseScale: 20
+    - _NoiseSmoothMax_2: 0
+    - _NoiseSmoothMin_2: 0
+    - _NormalScalar: 0
+    - _NormalStrength: 1
+    - _NormalStrengthFromHight: 0.01
+    - _OPACITYMASK: 0
+    - _QueueControl: 0
+    - _QueueOffset: 0
+    - _RightLeftVectorSmoothMax: 0.2
+    - _RightLeftVectorSmoothMin: 0.37
+    - _SmoothMaxNoise: 1
+    - _SmoothMinNoise: 0
+    - _SmoothnessMax: 1
+    - _SmoothnessMin: 0.68
+    - _SmoothnessSmoothMax: 1
+    - _SmoothnessSmoothMin: 0.48
+    - _UPDownVectorSmoothMax: -1
+    - _UPDownVectorSmoothMin: 0
+    - _VERTEXANIMATION: 0
+    - _VoronoiCellAngular: 0
+    - _VoronoiDensity: 0
+    - _VoronoiSmoothMax_1: 0
+    - _VoronoiSmoothMin_1: 0
+    - _WaveDensity: 50
+    - _WaveSmoothMax: 1
+    - _WaveSmoothMin: -0.7
+    - _WaveingStrength: 0.01
+    - _ZpostionZero: 0
+    m_Colors:
+    - _ColorFirst: {r: 1, g: 0.7327646, b: 0, a: 0}
+    - _ColorSecond: {r: 0.745283, g: 0, b: 0, a: 0}
+    - _ColorThird: {r: 0.5471698, g: 0.5471698, b: 0.5471698, a: 0}
+    - _DistanceRangeMinMAx: {r: 0, g: 1, b: 0, a: 0}
+    - _HandPostion: {r: 0, g: 0, b: 0, a: 0}
+    - _LandPlaceDotProduct: {r: 0, g: 0, b: 0, a: 0}
+    - _RightLeftVector: {r: 1, g: 0, b: 0, a: 0}
+    - _UPDownVector: {r: 0, g: 0, b: 1, a: 0}
+    - _UVNoiseMovment: {r: 0, g: 0, b: 0, a: 0}
+    - _WaveOffsetObjectSpace: {r: -0.09, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []

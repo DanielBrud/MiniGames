@@ -1,0 +1,146 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-8953703475114684787
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: eeb2f7cc86d54d644abe0986f87b4f33
+  m_EffectName: Attenuation
+  m_MixLevel: 2728b0b4726dd514b9f2836d84c13862
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!244 &-8176402124182364810
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: d6dab48a506130b4f8e9e5a846c75d70
+  m_EffectName: Attenuation
+  m_MixLevel: 4b75c78d6cceaa74ba06a6ad543608b0
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!243 &-2645110284484955859
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: BaseSpeed
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 2b675da005486ee469b69f4df7556d93
+  m_Children: []
+  m_Volume: abec14f88c8f1c44fa890f2866505333
+  m_Pitch: 3c39dde05b8272248974124fb62da06d
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -8176402124182364810}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!241 &24100000
+AudioMixerController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlayerMixe
+  m_OutputGroup: {fileID: 0}
+  m_MasterGroup: {fileID: 24300002}
+  m_Snapshots:
+  - {fileID: 24500006}
+  m_StartSnapshot: {fileID: 24500006}
+  m_SuspendThreshold: -80
+  m_EnableSuspend: 1
+  m_UpdateMode: 0
+  m_ExposedParameters:
+  - guid: abec14f88c8f1c44fa890f2866505333
+    name: BaseSpeedVolume
+  - guid: 64a150ff8edf2c34e857f89272476953
+    name: MasterVolume
+  - guid: d898f8196ccaf484ba5c1cf13c169db3
+    name: MoreSpeedVolume
+  m_AudioMixerGroupViews:
+  - guids:
+    - 7a015f7bd6a1de648b601bd336a4a8f8
+    - ca73fe26257377644999497e3e17dd0f
+    - 2b675da005486ee469b69f4df7556d93
+    name: View
+  m_CurrentViewIndex: 0
+  m_TargetSnapshot: {fileID: 24500006}
+--- !u!243 &24300002
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Master
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: 7a015f7bd6a1de648b601bd336a4a8f8
+  m_Children:
+  - {fileID: -2645110284484955859}
+  - {fileID: 2781049039574393674}
+  m_Volume: 64a150ff8edf2c34e857f89272476953
+  m_Pitch: e271e757cbe90b448b730c489dd6df7a
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: 24400004}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0
+--- !u!244 &24400004
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 095caac69c83eca4aab6fdee22b57eee
+  m_EffectName: Attenuation
+  m_MixLevel: f5c91910de8135b4088bb3fa338900c1
+  m_Parameters: []
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
+--- !u!245 &24500006
+AudioMixerSnapshotController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Snapshot
+  m_AudioMixer: {fileID: 24100000}
+  m_SnapshotID: 019f7ad3bbb17244cb37074d2284f1a4
+  m_FloatValues:
+    d898f8196ccaf484ba5c1cf13c169db3: -22.71404
+    64a150ff8edf2c34e857f89272476953: 0
+  m_TransitionOverrides: {}
+--- !u!243 &2781049039574393674
+AudioMixerGroupController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MoreSpeed
+  m_AudioMixer: {fileID: 24100000}
+  m_GroupID: ca73fe26257377644999497e3e17dd0f
+  m_Children: []
+  m_Volume: d898f8196ccaf484ba5c1cf13c169db3
+  m_Pitch: f4836d184983cf748b5225eab5f6d59c
+  m_Send: 00000000000000000000000000000000
+  m_Effects:
+  - {fileID: -8953703475114684787}
+  m_UserColorIndex: 0
+  m_Mute: 0
+  m_Solo: 0
+  m_BypassEffects: 0

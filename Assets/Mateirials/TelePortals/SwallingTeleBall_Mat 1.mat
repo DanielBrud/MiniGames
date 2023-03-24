@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-934133450688876514
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SwallingTeleBall_Mat 1
+  m_Shader: {fileID: -6465566751694194690, guid: f501e92e03fae0343b1fc25197368b87,
+    type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 2
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _EmmisionStrengkt: 4.01
+    - _EmmisionStrength: 1.8
+    - _NoiseMax: 0.2
+    - _NoiseMin: 6.8
+    - _Noisemax: 0.62
+    - _NormalStrenght: 0.015
+    - _QueueControl: 1
+    - _QueueOffset: 3
+    - _RotateSpeed: 123.4
+    - _Speed: 2.3
+    - _WaveNumber: 7.95
+    - _distanceToTarget: 0
+    - _objectDamping: 0.4
+    - _rangeOfSwaling: 0
+    - _swalingSmoothnes: 0.06
+    - _voronoiCell: 10
+    m_Colors:
+    - _Color: {r: 0.972549, g: 0.4761284, b: 0, a: 0}
+    - _Color_1: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0}
+    - _OffsetAxis: {r: 1, g: 0.25, b: 0, a: 0}
+    - _RotateAxis: {r: 1, g: 0, b: 0, a: 0}
+    - _portalPoition: {r: -4.341637, g: 1.79, b: 5.692361, a: 0}
+    - _portalPosition: {r: -0.9789676, g: -0.1299999, b: 1.0613497, a: 0}
+  m_BuildTextureStacks: []
