@@ -52,8 +52,10 @@ public class MagicBallsSpawner : MonoBehaviour
         cameraDirection = mycamera.transform.forward;
         
         int rndInt = Random.Range(0, ballscount);
-	    //GameObject chosenObject = magicBalls[rndInt];
-	    GameObject chosenObject = magicBalls[1];
+	    GameObject chosenObject = magicBalls[rndInt];
+
+        // For debugging
+        //GameObject chosenObject = magicBalls[1];
 
         if (!chosenObject.activeSelf) 
         {
