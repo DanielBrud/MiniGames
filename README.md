@@ -10,7 +10,9 @@ Hi! This is my first project i'm working on mini games where we use our hands to
 ## Guide
 
 Evrey game starts from spawing ball before player.
+
 To start game hit the ball towards the ground.
+
 <img src= "https://user-images.githubusercontent.com/32804264/227599081-716d7b32-19d2-456a-91a6-b0f8e42994f7.gif" width= "50%" height = "50%">
 
 
