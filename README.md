@@ -28,6 +28,10 @@ This game is about controlling the ball in such a way as to avoid obstacles and 
 ![Hole_Guide](https://user-images.githubusercontent.com/32804264/227795434-4884865e-2588-4fd4-87c4-b280f6623773.gif)
 
 
+## TODO
+
+Create a UI game guide and main menu
+
 # License
 [MIT](https://github.com/DanielBrud/MiniGames/blob/master/LICENSE)
 
