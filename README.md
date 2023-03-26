@@ -9,7 +9,7 @@ Hi! This is my first project i'm working on mini games where we use our hands to
 
 ## Guide
 
-Evrey game starts from spawing ball before player.
+Every game starts from spawing ball before player.
 
 To start game hit the ball towards the ground.
 
