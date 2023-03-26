@@ -16,6 +16,12 @@ To start game hit the ball towards the ground.
 <img src= "https://user-images.githubusercontent.com/32804264/227599081-716d7b32-19d2-456a-91a6-b0f8e42994f7.gif" width= "50%" height = "50%">
 
 
+### Teleportals
+
+This game is about throwing the ball into portal and setting the orientation the secondone so that after teleporting ball hits the target.
+
+
+
 # License
 [MIT](https://github.com/DanielBrud/MiniGames/blob/master/LICENSE)
 
