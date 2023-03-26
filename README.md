@@ -5,7 +5,8 @@ Hi! This is my first project i'm working on mini games where we use our hands to
 
 [Video](https://www.youtube.com/watch?v=ruRlvjdJYNE&ab_channel=DanielBrud)
 
-![alt text](https://github.com/DanielBrud/MiniGames/blob/master/Images/Unity%20MiniGames.png)
+![Unity MiniGames](https://user-images.githubusercontent.com/32804264/227796412-b012593c-6448-46f3-b1e5-711b0cce81ff.png)
+
 
 ## Guide
 
