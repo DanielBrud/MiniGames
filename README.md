@@ -20,6 +20,7 @@ To start game hit the ball towards the ground.
 
 This game is about throwing the ball into portal and setting the orientation the secondone so that after teleporting ball hits the target.
 
+![TelePortal Guid](https://user-images.githubusercontent.com/32804264/227794585-2a7a71cb-ab23-4972-87ee-fd23bf2c758d.gif)
 
 
 # License
