@@ -7,7 +7,7 @@ Hi! This is my first project i'm working on mini games where we use our hands to
 
 ![alt text](https://github.com/DanielBrud/MiniGames/blob/master/Images/Unity%20MiniGames.png)
 
-##Guide
+## Guide
 
 Evrey game starts from spawing ball before player.
 To start game hit the ball towards the ground.
