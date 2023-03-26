@@ -1,7 +1,7 @@
 
 # Mini Games
 
-Hi! This is my first project i'm working on mini games where we use our hands to play.
+Hi! This is my first public project. I'm working on mini games where we use our hands to play.
 
 [Video](https://www.youtube.com/watch?v=ruRlvjdJYNE&ab_channel=DanielBrud)
 
