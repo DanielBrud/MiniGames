@@ -22,6 +22,11 @@ This game is about throwing the ball into portal and setting the orientation the
 
 ![TelePortal Guid](https://user-images.githubusercontent.com/32804264/227794585-2a7a71cb-ab23-4972-87ee-fd23bf2c758d.gif)
 
+### Escape Ball
+This game is about controlling the ball in such a way as to avoid obstacles and hit the hole.
+
+![Hole_Guide](https://user-images.githubusercontent.com/32804264/227795434-4884865e-2588-4fd4-87c4-b280f6623773.gif)
+
 
 # License
 [MIT](https://github.com/DanielBrud/MiniGames/blob/master/LICENSE)
