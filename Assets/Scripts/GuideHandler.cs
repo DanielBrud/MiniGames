@@ -12,14 +12,14 @@ public class GuideHandler : MonoBehaviour
     [SerializeField] private VideoPlayer videoPlayer;
     [SerializeField] private TextMeshProUGUI textMesh;
     private Material material;
-    
+    private Pose guideScreenInitialLocalTransform;
     public bool IsShowGuidActive;
 
 
     private void OnEnable()
     {
         material = guideScreen.GetComponent<MeshRenderer>().material;
-        
+        guideScreenInitialLocalTransform = new Pose(guideScreen.transform.localPosition, guideScreen.transform.localRotation);
     }
     // Set appropriate guide settings for current  mini game
     private void SetCurrentGiudeProperties()
@@ -36,10 +36,11 @@ public class GuideHandler : MonoBehaviour
     // Show guide screen with description
     public void ShowGuide(bool state)
     {
+        
         guideScreen.SetActive(state);
         if (state) 
         {
-            gameFlowHandler.PauseGame(0);
+            gameFlowHandler.PauseGame(0.02f);
             SetCurrentGiudeProperties();
         }
 
@@ -50,6 +51,7 @@ public class GuideHandler : MonoBehaviour
         if (IsShowGuidActive) 
         {
             ShowGuide(true);
+            
         }
     }
     private void OnDisable()
@@ -62,5 +64,20 @@ public class GuideHandler : MonoBehaviour
         IsShowGuidActive = !IsShowGuidActive;
     }
 
+    public void SetGuideScreenInitialPose() 
+    {
+        guideScreen.transform.localPosition = guideScreenInitialLocalTransform.position;
+        guideScreen.transform.localRotation = guideScreenInitialLocalTransform.rotation;
+    }
+
+    public void SetGuideScreenPoseForwardCamera(float distance) 
+    {
+        if (IsShowGuidActive) 
+        {
+            guideScreen.transform.position = gameFlowHandler.myCamera.transform.position + gameFlowHandler.myCamera.transform.forward * distance;
+            guideScreen.transform.forward = gameFlowHandler.myCamera.transform.forward;
+        }
+            
+    }
 
 }

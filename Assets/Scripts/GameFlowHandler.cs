@@ -8,22 +8,21 @@ using UnityEngine.SceneManagement;
 
 public class GameFlowHandler : MonoBehaviour
 {
-
+	public Camera myCamera;
 	[SerializeField] private GameObject palmHand;
-	[SerializeField] private Camera myCamera;
 	[SerializeField] private GameObject loader;
 	[SerializeField] private InterpolationScalar interpolationScalar;
 	[SerializeField] private UnityEvent switchOfMenuButtons;
 	[SerializeField] private float loaderOffsetFromHand;
 	[SerializeField] private float loadTiemToMaterialMinValue;
 	[SerializeField] private float loadTiemToMaterialMaxValue;
+
 	
-	
+	[Range(0,1)]
+    public float dotProducTreshold;
+
 	private MeshRenderer loaderMeshRender;
 	private Material loadermaterial;
-
-    [Range(0,1)]
-    public float dotProducTreshold;
 
 	private float dotProductValue;
 	private bool isMenuVisible = false;
@@ -59,21 +58,21 @@ public class GameFlowHandler : MonoBehaviour
             
 			loader.SetActive(true);
             
-			loader.transform.position = palmHand.transform.position + palmHand.transform.up * loaderOffsetFromHand;
-			loader.transform.rotation = Quaternion.LookRotation(-palmHand.transform.up, -palmHand.transform.right);
 			
-			loaderMeshRender.enabled = true;
+			
+			//loaderMeshRender.enabled = true;
 			interpolationScalar.StartInterpolaation();
 			
-			PauseGame(0.1f);
+			
 			isMenuVisible = true;
 		}
-		else if (dotProductValue < dotProducTreshold && isMenuVisible)
+		else if (dotProductValue < 0f && isMenuVisible)
 		{
-			loader.transform.position = new Vector3(0, -5, 0);
-			switchOfMenuButtons.Invoke();
+			//loader.transform.position = new Vector3(0, -5, 0);
 			isMenuVisible = false;
-			loaderMeshRender.enabled = false;
+			switchOfMenuButtons.Invoke();
+			loader.SetActive(false);
+			//loaderMeshRender.enabled = false;
 			interpolationScalar.startValue = 0;
 			interpolationScalar.interpolationValue = 0;
 			PauseGame(1);
@@ -85,6 +84,8 @@ public class GameFlowHandler : MonoBehaviour
 	{
         if (isMenuVisible) 
 		{
+			loader.transform.position = palmHand.transform.position + palmHand.transform.up * loaderOffsetFromHand;
+			loader.transform.rotation = Quaternion.LookRotation(-palmHand.transform.up, -palmHand.transform.right);
 			float loadTime = Mathf.Lerp(loadTiemToMaterialMaxValue, loadTiemToMaterialMinValue, interpolationScalar.interpolationValue);
 			loadermaterial.SetFloat("_loadTime", loadTime);
 		}
@@ -99,7 +100,9 @@ public class GameFlowHandler : MonoBehaviour
     public void RestScene()
     {
         SceneManager.LoadScene(0);
-    }
+		PauseGame(1f);
+
+	}
 
     public void ExitGame()
     {
