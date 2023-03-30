@@ -32,7 +32,8 @@ public class GameFlowHandler : MonoBehaviour
 	
     private void OnEnable()
     {
-        isMenuVisible = false;
+		PauseGame(1);
+		isMenuVisible = false;
         loaderMeshRender = loader.GetComponent<MeshRenderer>();
         loadermaterial = loaderMeshRender.material;
     }
@@ -42,15 +43,17 @@ public class GameFlowHandler : MonoBehaviour
     {
 
 	    IsLoaderActive();
+		LoadMenuuTime();
 
-    }
+
+	}
     
 	// Check is camera look at open hand and start loading
 	private void IsLoaderActive()
 	{
 		dotProductValue = Vector3.Dot(-palmHand.transform.up, myCamera.transform.forward);
         
-		if(dotProductValue > dotProducTreshold)
+		if(dotProductValue > dotProducTreshold && !isMenuVisible)
 		{
             
             
@@ -58,17 +61,14 @@ public class GameFlowHandler : MonoBehaviour
             
 			loader.transform.position = palmHand.transform.position + palmHand.transform.up * loaderOffsetFromHand;
 			loader.transform.rotation = Quaternion.LookRotation(-palmHand.transform.up, -palmHand.transform.right);
-			if (!isMenuVisible)
-			{
-				loaderMeshRender.enabled = true;
-				interpolationScalar.StartInterpolaation();
-                
-			}
-			float loadTime = Mathf.Lerp(loadTiemToMaterialMaxValue, loadTiemToMaterialMinValue, interpolationScalar.interpolationValue);
-			loadermaterial.SetFloat("_loadTime", loadTime);
+			
+			loaderMeshRender.enabled = true;
+			interpolationScalar.StartInterpolaation();
+			
+			PauseGame(0.1f);
 			isMenuVisible = true;
 		}
-		else if (isMenuVisible)
+		else if (dotProductValue < dotProducTreshold && isMenuVisible)
 		{
 			loader.transform.position = new Vector3(0, -5, 0);
 			switchOfMenuButtons.Invoke();
@@ -76,11 +76,25 @@ public class GameFlowHandler : MonoBehaviour
 			loaderMeshRender.enabled = false;
 			interpolationScalar.startValue = 0;
 			interpolationScalar.interpolationValue = 0;
-			
-            
-            
+			PauseGame(1);
+
 		}
 	}
+
+	private void LoadMenuuTime() 
+	{
+        if (isMenuVisible) 
+		{
+			float loadTime = Mathf.Lerp(loadTiemToMaterialMaxValue, loadTiemToMaterialMinValue, interpolationScalar.interpolationValue);
+			loadermaterial.SetFloat("_loadTime", loadTime);
+		}
+		
+	}
+
+	public void PauseGame(float value)
+    {
+		Time.timeScale = value;
+    }
 
     public void RestScene()
     {

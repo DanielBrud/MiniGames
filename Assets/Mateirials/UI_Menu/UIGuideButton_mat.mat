@@ -1,5 +1,18 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-1862814670389113376
+MonoBehaviour:
+  m_ObjectHideFlags: 11
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
 --- !u!21 &2100000
 Material:
   serializedVersion: 8
@@ -7,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Loader_mat
-  m_Shader: {fileID: -6465566751694194690, guid: bd3da815e481eca43886fe616a859c0f,
+  m_Name: UIGuideButton_mat
+  m_Shader: {fileID: -6465566751694194690, guid: 7abe20282449ca245b56f42b66c8edb2,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -35,25 +48,21 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AlphaMultiplier: 0.75
-    - _LoadFade: 0.03
+    - _Alpha: 0
+    - _Blend: 1.88
+    - _BlendHover: 0
+    - _BorderCornerSmooth: 0.15
+    - _BorderHeight: 0.3
+    - _BorderThin: 0.03
+    - _BorderThinMax: 0.03
+    - _BorderThinMin: 0
+    - _BorderWidth: 0.3
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _loadTime: 1.05
+    - _SmothAlphaMax: 1
+    - _SmothAlphaMin: 0
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 0}
-    - _ColorFill: {r: 0.5254902, g: 1.8901961, b: 0.047058824, a: 0}
+    - _ColorHover: {r: 0.14481235, g: 1, b: 0, a: 0}
+    - _ObjectScale: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &5335220881949357311
-MonoBehaviour:
-  m_ObjectHideFlags: 11
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  version: 5

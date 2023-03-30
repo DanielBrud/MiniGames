@@ -78,7 +78,7 @@ Material:
     - _LODThresholdSooothMin: 0
     - _LODsmooth: 35
     - _PortalDepth: 10
-    - _PortalOpen: 0.4341853
+    - _PortalOpen: 1
     - _QueueControl: 1
     - _QueueOffset: 0
     - _ReceiveShadows: 1

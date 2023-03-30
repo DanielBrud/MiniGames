@@ -10,7 +10,9 @@ public class MagicBallsSpawner : MonoBehaviour
 	[SerializeField] private float startExeperienceDelay;
 	[SerializeField] private float ballSpawnOffsetFromCamera;
 	
-	private GameObject[] magicBalls;
+	public static int gameID { get; private set; }
+    
+    private GameObject[] magicBalls;
 	private GameObject currentBall;
 	private Vector3 cameraPosition;
 	private Vector3 cameraDirection;
@@ -52,7 +54,8 @@ public class MagicBallsSpawner : MonoBehaviour
         cameraDirection = mycamera.transform.forward;
         
         int rndInt = Random.Range(0, ballscount);
-	    GameObject chosenObject = magicBalls[rndInt];
+        gameID = rndInt;
+        GameObject chosenObject = magicBalls[rndInt];
 
         // For debugging
         //GameObject chosenObject = magicBalls[1];

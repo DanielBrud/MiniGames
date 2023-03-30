@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbe5f69d247c0c4eb27f3dd8bb7d0dc, type: 3}
+  m_Name: GuideTeleportals
+  m_EditorClassIdentifier: 
+  renderTexture: {fileID: 8400000, guid: b15c412ed4fd1c9418a7e577d85763a3, type: 2}
+  videoClip: {fileID: 32900000, guid: 7319ec5a92e68264790c5108e024f4fb, type: 3}
+  description: Throw the ball through the portal in such a way that it falls out
+    of the second portal and hits the target

@@ -128,7 +128,7 @@ Material:
     - _ColorSecond: {r: 1, g: 0.6489396, b: 0, a: 0}
     - _ColorThird: {r: 0, g: 0, b: 0, a: 0}
     - _DistanceRangeMinMAx: {r: 0, g: 0.1, b: 0, a: 0}
-    - _HandPostion: {r: 0.3923945, g: 0.76288843, b: 0.50762546, a: 0}
+    - _HandPostion: {r: -0.029758856, g: 1.0547471, b: 0.19781671, a: 0}
     - _LandPlaceDotProduct: {r: 0, g: 0, b: 1.48, a: 0}
     - _MetalicMax: {r: 0, g: 0, b: 0, a: 0}
     - _MetalicMin: {r: 0, g: 0, b: 0, a: 0}

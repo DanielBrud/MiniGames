@@ -69,7 +69,7 @@ public class InterpolationScalar : MonoBehaviour
     {
         if (startInter)
         {
-            startValue += Time.deltaTime * scalarInterpolation;
+            startValue += Time.unscaledDeltaTime * scalarInterpolation;
             interpolationValue = animationCurve[0].Evaluate(startValue);
             if (startValue > tresholdUP)
             {
@@ -83,7 +83,7 @@ public class InterpolationScalar : MonoBehaviour
         }
         if (reversInter)
         {
-            reverseValue -= Time.deltaTime * scalarInterpolation;
+            reverseValue -= Time.unscaledDeltaTime * scalarInterpolation;
             interpolationValue = animationCurve[1].Evaluate(reverseValue);
             if (reverseValue < tresholdDown)
             { 
