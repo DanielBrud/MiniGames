@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GuideEscapeBall
   m_EditorClassIdentifier: 
   renderTexture: {fileID: 8400000, guid: d43b9136170ffb24ba26dee06d204269, type: 2}
-  videoClip: {fileID: 32900000, guid: 5889f7c8fcaf4874abe2d4ea6dea383b, type: 3}
+  videoClip: {fileID: 32900000, guid: e24e80b3da1c4d04899d9aaa43d5afe1, type: 3}
   description: Pinch your fingers to control the pointer which the ball follows and
     avoid obstacles to reach the portal.

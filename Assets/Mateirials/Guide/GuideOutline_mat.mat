@@ -10,14 +10,17 @@ Material:
   m_Name: GuideOutline_mat
   m_Shader: {fileID: -6465566751694194690, guid: e5918e533f4c21746918b21bfdd9c23c,
     type: 3}
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _SURFACE_TYPE_TRANSPARENT
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
+  disabledShaderPasses:
+  - DepthOnly
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -39,20 +42,34 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0
+    - _Alpha: 1
+    - _AlphaClip: 0
+    - _AlphaClipTreshold: 0.3
+    - _AlphaTresholdBackround: 0
+    - _Blend: 0
     - _BorderCornerSmooth: 0.28
-    - _BorderHeight: 1.1
+    - _BorderHeight: 0.62
     - _BorderThinMax: 0.05
     - _BorderThinMin: -0.02
     - _BorderWidth: 1.1
+    - _CastShadows: 1
+    - _Cull: 2
+    - _DstBlend: 10
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _ReceiveShadows: 1
     - _SmothAlphaMax: 1.26
-    - _SmothAlphaMin: 0
+    - _SmothAlphaMin: 0.5
+    - _SrcBlend: 5
+    - _Surface: 1
+    - _WorkflowMode: 1
+    - _ZTest: 4
+    - _ZWrite: 0
+    - _ZWriteControl: 0
     m_Colors:
     - _Color: {r: 542.1862, g: 542.1862, b: 542.1862, a: 0}
     - _ColorBackground: {r: 0.5254902, g: 1.8901961, b: 0.047058824, a: 0}
-    - _ColorBorder: {r: 0.048515774, g: 0.17160212, b: 0.0044922004, a: 0}
+    - _ColorBorder: {r: 0, g: 0, b: 0, a: 0}
     - _ObjectScale: {r: 3, g: 3, b: 3, a: 0}
     - _UVOffset: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _UVTiling: {r: 0.85, g: 0.85, b: 0, a: 0}

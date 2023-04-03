@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GuideTeleportals
   m_EditorClassIdentifier: 
   renderTexture: {fileID: 8400000, guid: b15c412ed4fd1c9418a7e577d85763a3, type: 2}
-  videoClip: {fileID: 32900000, guid: 7319ec5a92e68264790c5108e024f4fb, type: 3}
+  videoClip: {fileID: 32900000, guid: c208d7cb7e6a5fc47982d4da968a4314, type: 3}
   description: Throw the ball through the portal in such a way that it falls out
-    of the second portal and hits the target
+    of the second portal and hits the target , to control portals rotation pinch
+    yours fingers when are highlighted
